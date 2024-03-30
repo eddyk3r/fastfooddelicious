@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Food Delicious</title>
+
+    <script>
+        let cart = [];
+        function addToCart(item, price) {
+            const product = {
+                name: item,
+                price: price,
+            };
+            cart.push(product);
+            alert(`Ai adăugat un ${item} în coșul de cumpărături.`);
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #FF5733;
+            color: white;
+            padding: 21px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        h1,
+        h2 {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #FF8C66;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 10px;
+            color: white;
+        }
+
+        .poza {
+            text-align: center;
+        }
+
+        .poza img {
+            max-width: 100%;
+            height: auto;
+        }
+
+       
+
+        .text {
+    text-align: center;
+    color: #FF5733;
+    font-size: 24px;
+    margin-top: 40px; 
+}
+
+.text11 {
+    margin-top: 40px; 
+    margin-left: 10px;
+    font-size: 21px;
+    color: #FF5733;
+}
+
+        .spatiu {
+            clear: both;
+            overflow: hidden;
+        }
+
+        .image11 {
+            float: left;
+            margin-right: 20px;
+            width: 400px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        #menu {
+    margin-top: 40px; 
+        }    
+
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 21px;
+        }
+
+        .product-alb {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product {
+            width: 250px;
+            margin: auto;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+       
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .product .name {
+            margin: 10px 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .product .price {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #e44d26;
+        }
+
+        .product button {
+            padding: 8px 16px;
+            background-color: #FF5733;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .product button:hover {
+            background-color: #e44d26;
+        }
+
+        footer {
+            background-color: #FF5733;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+ 
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-right: 10px; 
+            border-radius: 50%; 
+            border: 2px solid white; 
+            vertical-align: middle; 
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="Fast Food Delicious Logo" class="logo">
+        <h1>Fast Food Delicious</h1>
+        <h2>Cele mai bune gusturi pentru tine!</h2>
+    </header>
+
+    <nav>
+        <a href="meniu.html">Meniu</a>
+        <a href="comenzi.html">Comenzi</a>
+        <a href="desprenoi.html">Despre noi</a>
+    </nav>
+
+    <div class="poza">
+        <img src="poza1.jpg" alt="poza">
+    </div>
+
+    <div class="text">
+        <h1>Gustă Deliciul Rapid, Savoarea Fără Compromis, doar la Fast Food Delicious!</h1>
+    </div>
+
+    <div class="spatiu">
+        <img class="image11" src="poza2.jpg" alt="poza2">
+        <div class="text11">
+            <h1>Bine ați venit la Fast Food Delicious Târgu Jiu!</h1>
+            <p>Suntem destinația preferată pentru savoarea rapidă în inima acestui oraș plin de istorie și cultură.</p>
+            <p>Cu o pasiune pentru mâncare delicioasă și proaspătă, ne dedicăm să vă oferim cele mai gustoase opțiuni pentru a vă satisface pofta de mâncare.</p>
+            <p>Meniul nostru diversificat este gândit să mulțumească toate gusturile și preferințele.</p>
+            <p>De la burgeri suculenți, hot-dog-uri delicioase, până la sandvișuri și salate proaspete, avem ceva pentru toată lumea.</p>
+            <p>Ne mândrim cu ingrediente de cea mai înaltă calitate, gătind fiecare preparat cu atenție și pasiune, pentru a vă asigura de gustul autentic în fiecare muscătură.</p>
+            <p>Cu o locație convenabilă în Târgu Jiu, suntem locul ideal pentru o masă rapidă și delicioasă, fie că sunteți în mișcare sau vă relaxați în apropierea noastră.</p>
+            <p>Apreciază fiecare gust și experiență aici, într-un ambient prietenos și primitoare, care vă face să vă simțiți ca acasă.</p>
+            <p>Pe site-ul nostru, puteți explora meniul nostru, prețurile, ofertele speciale și puteți face chiar și comenzi online pentru a evita așteptările inutile.</p>
+            <p>Avem și opțiuni de livrare pentru a vă aduce savoarea noastră direct la ușa dvs.</p>
+            <p>La Fast Food Delicious, ne preocupăm de satisfacția clienților noștri și suntem mereu deschiși să ascultăm sugestiile voastre.</p>
+            <p>Suntem bucuroși să vă servim și să vă oferim o experiență culinară memorabilă în fiecare zi.</p>
+            <p>Vă invităm să vă alăturați nouă pentru o gustare delicioasă și să vă bucurați de Fast Food Delicious din Târgu Jiu!</p>
+        </div>
+    </div>
+
+
+ 
+    
+    <section id="menu">
+        <h2 style="color: silver; text-align: center;">Meniuri</h2>
+
+        <div class="products-container">
+            <!-- Produs 1 -->
+            <div class="product-alb">
+                <div class="product">
+                    <img src="https://i.ibb.co/ZG2hBfv/Burger-Giuseppe-scaled-removebg-preview.png" alt="Meniu burger">
+                    <div class="name">Meniu burger</div>
+                    <div class="price">21.99 RON</div>
+                    <button onclick="addToCart('Meniu burger', 19.99)">Adaugă în coș</button>
+                </div>
+            </div>
+
+            <!-- Produs 2 -->
+            <div class="product-alb">
+                <div class="product">
+                    <img src="https://i.ibb.co/5K9bxhc/pizza-quattro-stagioni-1214-med-removebg-preview.png" alt="Pizza Quattro Stagioni">
+                    <div class="name">Pizza Quattro Stagioni</div>
+                    <div class="price">25.99 RON</div>
+                    <button onclick="addToCart('Pizza Quattro Stagioni', 25.99)">Adaugă în coș</button>
+                </div>
+            </div>
+
+            <!-- Produs 3 -->
+            <div class="product-alb">
+                <div class="product">
+                    <img src="https://i.ibb.co/4T6V2BM/Meniu-piept-de-pui-removebg-preview.png" alt="Nume Produs">
+                    <div class="name">Meniu piept de pui</div>
+                    <div class="price">22.99 RON</div>
+                    <button onclick="addToCart('Meniu piept de pui', 22.99)">Adaugă în coș</button>
+                </div>
+            </div>
+            <!-- Produs 4 -->
+            <div class="product-alb">
+                <div class="product">
+                    <img src="https://i.ibb.co/8N59P9m/meniu-crispy-removebg-preview.png" alt="meniu-crispy-removebg-preview" alt="Nume Produs">
+                    <div class="name">Meniu crispy pui</div>
+                    <div class="price">22.99 RON</div>
+                    <button onclick="addToCart('Meniu crispy pui', 22.99)">Adaugă în coș</button>
+                </div>
+            </div>
+            <!-- Produs 5 -->
+            <div class="product-alb">
+                <div class="product">
+                    <img src="https://i.ibb.co/Y0cg2Xd/meniu-aripioare-600x401-removebg-preview.png" alt="Nume Produs">
+                    <div class="name">Meniu aripioare picante/nepicante</div>
+                    <div class="price">22.99 RON</div>
+                    <button onclick="addToCart('Meniu aripioare picante/nepicante', 22.99)">Adaugă în coș</button>
+                </div>
+            </div>
+            <!-- Produs 6 -->
+            <div class="product-alb">
+                <div class="product">
+                    <img src="https://i.ibb.co/dPNHWNB/ceafa-de-porc-la-gratar-550gr-removebg-preview.png" alt="Nume Produs">
+                    <div class="name">Meniu ceafa de porc</div>
+                    <div class="price">22.99 RON</div>
+                    <button onclick="addToCart('Meniu ceafa de porc', 22.99)">Adaugă în coș</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 style="color: silver; text-align: left;">Contact</h2>
+        <p style="text-align: left;">Puteți să ne contactați la adresa noastră:</p>
+        <address style="text-align: left;">
+            <p>FastFood Delicious</p>
+            <p>Str. Victoriei, Nr. 7</p>
+            <p>Targu Jiu</p>
+            <p>Telefon: +0374.532.128</p>
+            <p>Email: <a href="mailto:contact@fastfooddelicios.ro">contact@fastfooddelicios.ro</a></p>
+        </address>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Fast Food Delicious</p>
+        <p>Contact: +0374.532.128</p>
+    </footer>
+
+</body>
+
+</html>

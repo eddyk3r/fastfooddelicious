@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meniu - Fast Food Delicious</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('poza3.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #FF5733;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 42px;
+            line-height: 1.2;
+        }
+         
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-right: 10px; 
+            border-radius: 50%; 
+            border: 2px solid white; 
+            vertical-align: middle; 
+        }
+        nav {
+            background-color: #FF8C66;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            text-decoration: none;
+            margin: 10px;
+            color: white;
+            font-size: 20px;
+        }
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .menu-item img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        .menu-details {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .menu-details h2 {
+            margin-top: 0;
+            color: #FF5733;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        .menu-details p {
+            margin: 0 0 10px;
+            font-size: 20px;
+        }
+        .menu-details p:last-child {
+            margin-bottom: 0;
+        }
+        .text-silver {
+            color: #555;
+        }
+        footer {
+            background-color: #FF5733;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+            border-radius: 20px;
+            box-shadow: 0 -8px 12px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Fast Food Delicious Logo" class="logo">
+        <h1>Fast Food Delicious</h1>
+        <p>Cele mai bune gusturi pentru tine!</p>
+    </header>
+    <nav>
+        <a href="index.html">Acasă</a>
+        <a href="comenzi.html">Comenzi</a>
+        <a href="meniu.html">Meniu</a>
+        <a href="desprenoi.html">Despre Noi</a>
+    </nav>
+
+    <section>
+        <div class="menu-item">
+            <img src="burger.jpg" alt="Burger">
+            <div class="menu-details">
+                <h2>Burger clasic</h2>
+                <p>Burger suculent cu carne de vită, brânză cheddar, salată, roșii și sosuri delicioase.</p>
+                <p>Preț: 15 lei</p>
+            </div>
+        </div>
+        
+        <div class="menu-item">
+            <img src="pizza.jpg" alt="Pizza">
+            <div class="menu-details">
+                <h2>Pizza Quattro Stagioni</h2>
+                <p>Pizza cu patru arome: ciuperci, șuncă, anghinare și măsline, pregătită cu blat crocant.</p>
+                <p>Preț: 25 lei</p>
+            </div>
+        </div>
+        
+        <div class="menu-item">
+            <img src="salad.jpg" alt="Salad">
+            <div class="menu-details">
+                <h2>Salată Caesar</h2>
+                <p>Salată proaspătă cu piept de pui la grătar, crutoane, parmezan și sos Caesar.</p>
+                <p>Preț: 18 lei</p>
+            </div>
+        </div>
+        
+        <div class="menu-item">
+            <img src="fries.jpg" alt="French Fries">
+            <div class="menu-details">
+                <h2>Cartofi prăjiți</h2>
+                <p>Cartofi prăjiți crocanți și bine condimentați.</p>
+                <p>Preț: 10 lei</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="hotdog.jpg" alt="Hot Dog">
+            <div class="menu-details">
+                <h2>Hot Dog clasic</h2>
+                <p>Hot dog cu cârnați, chiflă proaspătă și condimente, servit cu cartofi prăjiți.</p>
+                <p>Preț: 12 lei</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="wrap.jpg" alt="Wrap">
+            <div class="menu-details">
+                <h2>Wrap vegetarian</h2>
+                <p>Wrap cu legume proaspete, hummus și sos de iaurt, servit cu garnitură de salată.</p>
+                <p>Preț: 14 lei</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="gyros.jpg" alt="Gyros">
+            <div class="menu-details">
+                <h2>Gyros</h2>
+                <p>Gyros cu carne de pui, lipie, legume proaspete și sosuri tradiționale.</p>
+                <p>Preț: 20 lei</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="kebab.jpg" alt="Kebab">
+            <div class="menu-details">
+                <h2>Kebab</h2>
+                <p>Kebab tradițional cu carne de miel, lipie și garnitură de legume.</p>
+                <p>Preț: 22 lei</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="drinks.jpg" alt="Băuturi">
+            <div class="menu-details">
+                <h2>Băuturi răcoritoare</h2>
+                <p>O varietate de băuturi răcoritoare: cola, apă plată/minerală, sucuri naturale.</p>
+                <p>Preț: 5 lei</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pasta.jpg" alt="Paste">
+            <div class="menu-details">
+                <h2>Paste Carbonara</h2>
+                <p>Paste cu sos cremos de smântână, bacon și parmezan.</p>
+                <p>Preț: 20 lei</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Fast Food Delicious</p>
+        <p>Contact: +0374.532.128</p>
+    </footer>
+</body>
+</html>
